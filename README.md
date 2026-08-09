@@ -1,14 +1,27 @@
 # linux_crypto
 
-This project is based on a crypto delta-neutral trading strategy being run autonomously with Linux to simulate tasks done by risk managers/quantitative traders. 
+This project takes a simple crypto delta-neutral paper trading strategy and builds a Linux-based operational layer around it.
+
+The main goal of the project is not to demonstrate a sophisticated trading edge, but to get hands-on experience with some of the tasks involved in running and monitoring a continuously operating trading algorithm: process management, logging, health checks, stale-data detection and service supervision.
 
 ## The Strategy
 
-delta neutral -> long 1 unit of spot, short 1 unit of perp of the same cryptocurrency. Goal is to harvest the funding rate, and entry is on if the expected return on entering this trade is positive. this is calculated by:
+The strategy is a simple delta-neutral spot/perpetual trade:
+
+- Long BTC spot
+- Short the equivalent quantity of the BTC perpetual
+- Attempt to capture positive perpetual funding while remaining approximately neutral to movements in the underlying BTC price
+
+The strategy receives spot and perpetual market data through Kraken WebSocket feeds.
+
+A position is opened when the estimated return from the basis and predicted funding is greater than the estimated round-trip transaction costs.
+
+The entry calculation is:
 
 $$
 \begin{aligned}
-\text{Entry Basis} &= P_{\text{perp,bid}} - P_{\text{spot,ask}} \\[4pt]
+\text{Entry Basis}
+&= P_{\text{perp,bid}} - P_{\text{spot,ask}} \\[4pt]
 
 \text{Expected Basis Return}
 &= \frac{\text{Entry Basis}}{P_{\text{spot,ask}}} \\[4pt]
@@ -17,7 +30,7 @@ $$
 &= f_{\text{predicted}} \times H \\[4pt]
 
 \text{Round-Trip Fees}
-&= 2\left(F_{\text{spot}} + F_{\text{perp}}\right) \\[4pt]
+&= 2(F_{\text{spot}} + F_{\text{perp}}) \\[4pt]
 
 \text{Expected Return}
 &= \text{Expected Basis Return}
@@ -26,17 +39,68 @@ $$
 \end{aligned}
 $$
 
+This is intentionally a simplified paper strategy. The focus of the project is the operational infrastructure around the strategy rather than proving that the strategy itself has an edge.
 
-included in the strategy file is a 'heartbeat' that writes to a JSON file that writes the timestamp, time since last spot and futures fetched, and whether or not a position is open. 
+## Heartbeat and Health Monitoring
 
-## The supporting linux system
+`delta_neut_strat.py` also runs a heartbeat alongside the trading logic.
 
-the supporting linux system makes sure that the strategy is running, with use of Linux's `systemd`. 
+Every few seconds it writes a `heartbeat.json` file containing:
 
-shell files that systemd touches to make sure the strategy is running are the `check_strategy.sh` and `start_strategy.sh`. 
+- the current timestamp
+- time since the latest spot market update
+- time since the latest futures market update
+- whether a paper position is currently open
 
-The `start_strategy.sh` shell script creates a log dir and runtime dir
-- The log dir includes the strategy’s stdout and stderr. this allows us to see what errors/outputs occured after the terminal closes.
-- the runtime directory includes a `strategy.pid` and `heartbeat.json` file. The `strategy.pid` is created each time the start_strategy.sh is run to ensure a unique ID is run parallel to the **current** run. the `heartbeat.json` file is created by the `delta_neut_strat.py` file, containing the aforementioned 'heartbeat' details. 
+This is useful because simply knowing that a Python process exists does not necessarily mean that the strategy is healthy. For example, the process could still be running while one of the WebSocket feeds has stopped receiving data.
 
-To integrate all these files into one coherent system, usage of 'systemd' is implemented. `systemd` is a service manager for linux distributions that initialises user space, can manage system services and controls parallel start up, among other things. in this case, to put simply, it begins the `start_strategy.sh` script and if it crashes for any reason, will restart the `start_strategy.sh` script, ensuring that the strategy works continously. 
+`health_check.py` reads this information and can therefore distinguish between basic process health and application/data-feed health.
+
+## Linux Operations Layer
+
+Before using `systemd`, I built several shell scripts to understand the basic Linux process lifecycle manually.
+
+### `start_strategy.sh`
+
+The startup script:
+
+- creates the required `logs/` and `runtime/` directories
+- launches the strategy using the project's virtual-environment Python interpreter
+- runs the strategy in the background
+- redirects stdout and stderr to `logs/strategy.log`
+- captures the PID assigned to the Python process and writes it to `runtime/strategy.pid`
+- prevents accidentally starting another copy when the recorded process is already running
+
+The PID file provides a simple way for the other operational scripts to identify the process associated with that particular strategy run.
+
+### `check_strategy.sh`
+
+This performs a basic process-level check by reading the stored PID and checking whether that process still exists.
+
+This was useful for understanding the difference between:
+
+1. a Python file existing on disk
+2. that file being executed as a Linux process
+3. the operating system assigning that process a PID
+4. monitoring whether that process is still alive
+
+### `stop_strategy.sh`
+
+The stop script reads the stored PID, sends a termination signal to that process and removes the stale PID file afterwards.
+
+## Logs and Runtime State
+
+The project separates persistent logs from temporary runtime information:
+
+```text
+linux_crypto/
+├── delta_neut_strat.py
+├── health_check.py
+├── start_strategy.sh
+├── stop_strategy.sh
+├── check_strategy.sh
+├── logs/
+│   └── strategy.log
+└── runtime/
+    ├── heartbeat.json
+    └── strategy.pid
