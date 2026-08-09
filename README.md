@@ -18,26 +18,26 @@ A position is opened when the estimated return from the basis and predicted fund
 
 The entry calculation is:
 
-$$
+```math
 \begin{aligned}
 \text{Entry Basis}
-&= P_{\text{perp,bid}} - P_{\text{spot,ask}} \\[4pt]
+&= P_{\text{perp,bid}} - P_{\text{spot,ask}} \\
 
 \text{Expected Basis Return}
-&= \frac{\text{Entry Basis}}{P_{\text{spot,ask}}} \\[4pt]
+&= \frac{\text{Entry Basis}}{P_{\text{spot,ask}}} \\
 
 \text{Expected Funding Return}
-&= f_{\text{predicted}} \times H \\[4pt]
+&= f_{\text{predicted}} \cdot H \\
 
 \text{Round-Trip Fees}
-&= 2(F_{\text{spot}} + F_{\text{perp}}) \\[4pt]
+&= 2\left(F_{\text{spot}} + F_{\text{perp}}\right) \\
 
 \text{Expected Return}
 &= \text{Expected Basis Return}
 + \text{Expected Funding Return}
 - \text{Round-Trip Fees}
 \end{aligned}
-$$
+```
 
 This is intentionally a simplified paper strategy. The focus of the project is the operational infrastructure around the strategy rather than proving that the strategy itself has an edge.
 
