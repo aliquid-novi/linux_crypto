@@ -104,3 +104,18 @@ linux_crypto/
 └── runtime/
     ├── heartbeat.json
     └── strategy.pid
+```
+`logs/strategy.log` stores the strategy's stdout and stderr, allowing errors and normal output to be inspected even when the original terminal session is no longer open. Additionally, `runtime/`'s directory stores temporary state used to monitor the currently running system. 
+
+## systemd 
+
+After implementing the strategy and shell scripts manually, I moved the strategy to `systemd` - this acts as a supervisor for the strategy, directly lauching the strategy using the project's virtual-environment Python interpreter. The `check_strategy.sh`, `start_strategy.sh` and `stop_strategy.sh` served as manual checks to understand the manual process-management steps that `systemd` now does. The service was configured with:
+
+``Restart=on-failure``
+``RestartSec=5``
+
+This configuration ensures that if the Python strategy exits unexpectedly, `systemd` will wait 5 seconds before starting a new instance. 
+
+## Next Steps
+
+Now that this simple system ensures that the operational health of the algorithm is secured via `systemd` and the strategy data is monitored by the strategy script itself by outputting `heartbeat.json` on fixed intervals, the next step would be to connect either paper or live trading to a more sophisticated trading strategy as the current infrustructure around the strategy is operationally robust in making sure the strategy is running. 
