@@ -1,6 +1,14 @@
 {
-  "timestamp": 1786245162.17767,
-  "spot_age_seconds": 3.1016604900360107,
-  "futures_age_seconds": 0.6154804229736328,
-  "position_open": false
+  "timestamp": 1786726583.574075,
+  "spot_age_seconds": 0.1239115140051581,
+  "futures_age_seconds": 0.07536301200161688,
+  "position_open": true,
+  "net_delta_usd": 2497.59,
+  "gross_exposure_usd": 4503.97,
+  "fills": 392,
+  "resting_orders": 4,
+  "pending_orders": 0,
+  "seq_gaps": 0,
+  "reconnects": 0,
+  "decode_errors": 0
 }

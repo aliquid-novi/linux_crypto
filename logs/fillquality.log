@@ -1,0 +1,196 @@
+===== starting 2026-08-15T02:27:41+10:00 =====
+BASE_DIR=/home/markp/projects/linux_crypto
+CMD=/home/markp/projects/linux_crypto/.venv/bin/python -u /home/markp/projects/linux_crypto/fillquality_v2.py --minutes 480 --taker-z 0.9 --probe-secs 45 --quote-refresh 2.0 --sim-latency-ms 40 --max-gross-usd 5000 --metrics-port 9108
+[metrics] prometheus_client not installed; metrics endpoint disabled
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=1
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=2
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=4
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=5
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=6
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=7
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=9
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=10
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=11
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=12
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=13
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=15
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=16
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=18
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=19
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=20
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=21
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=22
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=23
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=25
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=26
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=27
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=28
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=30
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=31
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=32
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=34
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=35
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=36
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=37
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=38
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=40
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=41
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=43
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=45
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=46
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=47
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=48
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=49
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=50
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=51
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=53
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=54
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=55
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=56
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=57
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=58
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=59
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=60
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=61
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=63
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=64
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=66
+[fut] reconnect: 'price'
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=68
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=69
+[fut] reconnect: 'price'
+[--] basis=n/a z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=70
+
+=== 0 fills persisted immediately ===
+No fills. Loosen taker_z / probe interval or lengthen the run.
+Task was destroyed but it is pending!
+task: <Task pending name='Task-148' coro=<Connection.keepalive() done, defined at /home/markp/projects/linux_crypto/.venv/lib/python3.14/site-packages/websockets/asyncio/connection.py:802> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+===== starting 2026-08-15T02:42:04+10:00 =====
+BASE_DIR=/home/markp/projects/linux_crypto
+CMD=/home/markp/projects/linux_crypto/.venv/bin/python -u /home/markp/projects/linux_crypto/fillquality_v2.py --minutes 480 --taker-z 0.9 --probe-secs 45 --quote-refresh 2.0 --sim-latency-ms 40 --max-gross-usd 5000 --metrics-port 9108
+[metrics] Prometheus endpoint on :9108/metrics
+[02:42:19] basis=-0.75bps z=+0.30 fills=8 delta=$-0 gross=$1000 gaps=0 reconn=0
+[02:42:34] basis=+0.77bps z=n/a fills=25 delta=$+250 gross=$2250 gaps=0 reconn=0
+[02:42:49] basis=+0.77bps z=n/a fills=25 delta=$+250 gross=$2250 gaps=0 reconn=0
+[02:43:04] basis=-0.55bps z=-0.49 fills=31 delta=$+250 gross=$3750 gaps=0 reconn=0
+[02:43:19] basis=+0.40bps z=n/a fills=35 delta=$+250 gross=$2750 gaps=0 reconn=0
+[02:43:34] basis=+1.05bps z=+0.68 fills=44 delta=$+500 gross=$2000 gaps=0 reconn=0
+[02:43:49] basis=-0.20bps z=n/a fills=49 delta=$+750 gross=$3250 gaps=0 reconn=0
+[02:44:04] basis=-0.67bps z=n/a fills=56 delta=$+500 gross=$5000 gaps=0 reconn=0
+[02:44:19] basis=+0.44bps z=+0.71 fills=56 delta=$+500 gross=$5000 gaps=0 reconn=0
+[02:44:34] basis=-0.07bps z=+2.26 fills=58 delta=$+500 gross=$4500 gaps=0 reconn=0
+[02:44:49] basis=-0.07bps z=n/a fills=58 delta=$+500 gross=$4500 gaps=0 reconn=0
+[02:45:04] basis=+0.55bps z=n/a fills=58 delta=$+500 gross=$4500 gaps=0 reconn=0
+[02:45:19] basis=+0.39bps z=n/a fills=61 delta=$+250 gross=$4750 gaps=0 reconn=0
+[02:45:34] basis=-1.20bps z=+0.57 fills=64 delta=$+500 gross=$5000 gaps=0 reconn=0
+[02:45:49] basis=+0.53bps z=-0.97 fills=66 delta=$+500 gross=$4500 gaps=0 reconn=0
+[02:46:04] basis=+0.29bps z=+0.58 fills=68 delta=$+500 gross=$5000 gaps=0 reconn=0
+[02:46:19] basis=-0.97bps z=-0.86 fills=71 delta=$+750 gross=$4748 gaps=0 reconn=0
+[02:46:34] basis=-3.48bps z=n/a fills=91 delta=$+1249 gross=$3746 gaps=0 reconn=0
+[02:46:49] basis=-3.95bps z=n/a fills=99 delta=$+1248 gross=$4746 gaps=0 reconn=0
+[02:47:04] basis=-2.24bps z=n/a fills=108 delta=$+1999 gross=$2497 gaps=0 reconn=0
+[02:47:19] basis=-2.90bps z=n/a fills=114 delta=$+1999 gross=$2996 gaps=0 reconn=0
+[02:47:34] basis=-2.56bps z=n/a fills=124 delta=$+1999 gross=$3496 gaps=0 reconn=0
+[02:47:49] basis=-2.81bps z=n/a fills=129 delta=$+2249 gross=$4246 gaps=0 reconn=0
+[02:48:04] basis=-2.72bps z=-1.12 fills=131 delta=$+2249 gross=$4747 gaps=0 reconn=0
+[02:48:19] basis=-1.83bps z=n/a fills=131 delta=$+2249 gross=$4747 gaps=0 reconn=0
+[02:48:34] basis=-1.99bps z=n/a fills=131 delta=$+2249 gross=$4747 gaps=0 reconn=0
+[02:48:49] basis=+1.34bps z=n/a fills=133 delta=$+2250 gross=$4749 gaps=0 reconn=0
+[02:49:04] basis=-1.04bps z=+0.57 fills=137 delta=$+2250 gross=$4748 gaps=0 reconn=0
+[02:49:19] basis=-0.09bps z=n/a fills=137 delta=$+2250 gross=$4748 gaps=0 reconn=0
+[02:49:34] basis=+1.50bps z=-1.57 fills=138 delta=$+2000 gross=$4999 gaps=0 reconn=0
+[02:49:49] basis=-0.72bps z=n/a fills=142 delta=$+2000 gross=$4998 gaps=0 reconn=0
+[02:50:04] basis=-1.51bps z=-0.89 fills=150 delta=$+1999 gross=$4998 gaps=0 reconn=0
+[02:50:19] basis=-2.78bps z=n/a fills=152 delta=$+2499 gross=$4497 gaps=0 reconn=0
+[02:50:34] basis=-4.41bps z=-1.31 fills=170 delta=$+2498 gross=$3996 gaps=0 reconn=0
+[02:50:49] basis=-4.45bps z=+0.01 fills=194 delta=$+2498 gross=$2498 gaps=0 reconn=0
+[02:51:04] basis=-5.00bps z=-2.45 fills=213 delta=$+2248 gross=$2248 gaps=0 reconn=0
+[02:51:19] basis=-5.14bps z=-0.42 fills=228 delta=$+2498 gross=$2498 gaps=0 reconn=0
+[02:51:34] basis=-3.74bps z=+0.47 fills=241 delta=$+2248 gross=$3255 gaps=0 reconn=0
+[02:51:49] basis=-4.67bps z=n/a fills=250 delta=$+2498 gross=$2505 gaps=0 reconn=0
+[02:52:04] basis=-3.98bps z=n/a fills=262 delta=$+2498 gross=$2505 gaps=0 reconn=0
+[02:52:19] basis=-2.27bps z=n/a fills=279 delta=$+2248 gross=$4755 gaps=0 reconn=0
+[02:52:34] basis=-2.58bps z=n/a fills=287 delta=$+2248 gross=$4755 gaps=0 reconn=0
+[02:52:49] basis=-2.51bps z=+2.66 fills=296 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[02:53:04] basis=-2.67bps z=-0.42 fills=304 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[02:53:19] basis=-1.40bps z=n/a fills=310 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[02:53:34] basis=-2.35bps z=-0.10 fills=316 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[02:53:49] basis=-2.35bps z=-0.54 fills=316 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[02:54:04] basis=-5.54bps z=n/a fills=330 delta=$+2498 gross=$4504 gaps=0 reconn=0
+[02:54:19] basis=-6.96bps z=n/a fills=346 delta=$+2498 gross=$4503 gaps=0 reconn=0
+[02:54:34] basis=-5.80bps z=-0.46 fills=350 delta=$+2498 gross=$4503 gaps=0 reconn=0
+[02:54:49] basis=-5.96bps z=n/a fills=354 delta=$+2498 gross=$4503 gaps=0 reconn=0
+[02:55:04] basis=-5.93bps z=n/a fills=362 delta=$+2497 gross=$4503 gaps=0 reconn=0
+[02:55:19] basis=-6.06bps z=n/a fills=374 delta=$+2497 gross=$4503 gaps=0 reconn=0
+[02:55:34] basis=-4.36bps z=n/a fills=378 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[02:55:49] basis=-4.41bps z=+0.71 fills=380 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[02:56:04] basis=-5.07bps z=+0.49 fills=384 delta=$+2498 gross=$4504 gaps=0 reconn=0
+[02:56:19] basis=-4.91bps z=n/a fills=392 delta=$+2498 gross=$4504 gaps=0 reconn=0

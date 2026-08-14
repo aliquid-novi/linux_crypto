@@ -1,0 +1,16 @@
+[Unit]
+Description=Fillquality execution-quality harness
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/YOUR_USER/linux_crypto
+ExecStart=/home/YOUR_USER/linux_crypto/.venv/bin/python -u /home/YOUR_USER/linux_crypto/fillquality_v2.py --minutes 480 --taker-z 0.9 --probe-secs 45 --quote-refresh 2.0 --sim-latency-ms 40 --max-gross-usd 5000 --metrics-port 9108
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:/home/YOUR_USER/linux_crypto/logs/fillquality.log
+StandardError=append:/home/YOUR_USER/linux_crypto/logs/fillquality.log
+
+[Install]
+WantedBy=multi-user.target

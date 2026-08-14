@@ -119,3 +119,35 @@ Traceback (most recent call last):
   File "/home/markp/projects/crypto_trading/.venv/lib/python3.14/site-packages/websockets/asyncio/connection.py", line 316, in recv
     raise self.protocol.close_exc from self.recv_exc
 websockets.exceptions.ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+Running strat...
+TimeoutError: timed out while closing connection
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/markp/projects/linux_crypto/delta_neut_strat.py", line 256, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/markp/projects/linux_crypto/delta_neut_strat.py", line 246, in main
+    await asyncio.gather(
+    ...<4 lines>...
+    )
+  File "/home/markp/projects/linux_crypto/delta_neut_strat.py", line 74, in futures_feed
+    async for raw_message in ws:
+    ...<22 lines>...
+        market['futures_updated_at'] = time.time()
+  File "/home/markp/projects/linux_crypto/.venv/lib/python3.14/site-packages/websockets/asyncio/connection.py", line 236, in __aiter__
+    yield await self.recv()
+          ^^^^^^^^^^^^^^^^^
+  File "/home/markp/projects/linux_crypto/.venv/lib/python3.14/site-packages/websockets/asyncio/connection.py", line 316, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received

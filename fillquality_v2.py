@@ -1289,6 +1289,20 @@ class Engine:
             return False
         self.hist.add("decode", (time.perf_counter_ns() - t0) / 1e9)
 
+        # Subscription acknowledgements also include a ``feed`` field (for
+        # example {"event": "subscribed", "feed": "book", ...}) but are
+        # not market-data deltas and therefore have no price/qty fields.
+        # Ignore/control-handle them before dispatching on ``feed``.
+        event = msg.get("event")
+        if event is not None:
+            self.writers.event("FUT_WS_CONTROL", venue="fut",
+                               ws_event=event, feed=msg.get("feed"),
+                               message=msg.get("message"))
+            if event in ("error", "subscribed_failed"):
+                print(f"[fut] websocket control error: {msg}",
+                      file=sys.stderr, flush=True)
+            return False
+
         feed = msg.get("feed")
         book = self.books["fut"]
         gap = False
@@ -1326,15 +1340,38 @@ class Engine:
                         self.prom.feed_lag.labels("fut").set(lag * 1e3)
                 self._decide(exch_ts, t_recv)
 
+        elif feed == "trade_snapshot":
+            # Kraken sends an initial snapshot as a wrapper containing a
+            # ``trades`` array before subsequent single ``trade`` deltas.
+            for trade in msg.get("trades", []):
+                t_ex = trade.get("time") or trade.get("timestamp")
+                if isinstance(t_ex, (int, float)) and t_ex > 1e12:
+                    t_ex = t_ex / 1000.0
+                self._record_trade("fut", trade,
+                                   t_ex if isinstance(t_ex, (int, float)) else None)
+                if all(k in trade for k in ("price", "qty")):
+                    fills = self.sim.on_trade(
+                        "fut", trade.get("side", "buy"),
+                        trade["price"], trade["qty"], time.time())
+                    for f in fills:
+                        self._handle_fill(f)
+
         elif feed == "trade":
-            t_ex = msg.get("time") or msg.get("timestamp")
-            if isinstance(t_ex, (int, float)) and t_ex > 1e12:
-                t_ex = t_ex / 1000.0
-            self._record_trade("fut", msg, t_ex if isinstance(t_ex, (int, float)) else None)
-            fills = self.sim.on_trade("fut", msg.get("side", "buy"),
-                                      msg["price"], msg["qty"], time.time())
-            for f in fills:
-                self._handle_fill(f)
+            # Defensive field check: malformed/control messages should be
+            # logged, not crash the entire futures WebSocket task.
+            if not all(k in msg for k in ("price", "qty")):
+                self.metrics.decode_errors += 1
+                self.writers.event("FUT_TRADE_MALFORMED", venue="fut", raw=msg)
+            else:
+                t_ex = msg.get("time") or msg.get("timestamp")
+                if isinstance(t_ex, (int, float)) and t_ex > 1e12:
+                    t_ex = t_ex / 1000.0
+                self._record_trade("fut", msg,
+                                   t_ex if isinstance(t_ex, (int, float)) else None)
+                fills = self.sim.on_trade("fut", msg.get("side", "buy"),
+                                          msg["price"], msg["qty"], time.time())
+                for f in fills:
+                    self._handle_fill(f)
 
         self.metrics.record_work(time.perf_counter_ns() - t0)
         self.hist.add("handler_total", (time.perf_counter_ns() - t0) / 1e9)
