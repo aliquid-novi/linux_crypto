@@ -194,3 +194,116 @@ CMD=/home/markp/projects/linux_crypto/.venv/bin/python -u /home/markp/projects/l
 [02:55:49] basis=-4.41bps z=+0.71 fills=380 delta=$+2497 gross=$4504 gaps=0 reconn=0
 [02:56:04] basis=-5.07bps z=+0.49 fills=384 delta=$+2498 gross=$4504 gaps=0 reconn=0
 [02:56:19] basis=-4.91bps z=n/a fills=392 delta=$+2498 gross=$4504 gaps=0 reconn=0
+[02:56:34] basis=-4.76bps z=n/a fills=396 delta=$+2498 gross=$4504 gaps=0 reconn=0
+[02:56:49] basis=-2.58bps z=n/a fills=397 delta=$+2247 gross=$4754 gaps=0 reconn=0
+[02:57:04] basis=-4.10bps z=n/a fills=404 delta=$+2498 gross=$4504 gaps=0 reconn=0
+[02:57:19] basis=-3.15bps z=n/a fills=413 delta=$+2248 gross=$4755 gaps=0 reconn=0
+[02:57:34] basis=-3.35bps z=n/a fills=416 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[02:57:49] basis=-3.19bps z=n/a fills=416 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[02:58:04] basis=-2.72bps z=n/a fills=419 delta=$+2248 gross=$4755 gaps=0 reconn=0
+[02:58:19] basis=-4.48bps z=n/a fills=430 delta=$+2498 gross=$4504 gaps=0 reconn=0
+[02:58:34] basis=-2.62bps z=+2.77 fills=430 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[02:58:49] basis=-3.43bps z=n/a fills=447 delta=$+2248 gross=$4755 gaps=0 reconn=0
+[02:59:04] basis=-3.89bps z=n/a fills=458 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[02:59:19] basis=-3.89bps z=n/a fills=458 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[02:59:34] basis=-4.66bps z=n/a fills=466 delta=$+2498 gross=$4504 gaps=0 reconn=0
+[02:59:49] basis=-4.03bps z=n/a fills=470 delta=$+2498 gross=$4504 gaps=0 reconn=0
+[03:00:04] basis=-2.92bps z=n/a fills=474 delta=$+2498 gross=$4504 gaps=0 reconn=0
+[03:00:19] basis=-2.45bps z=n/a fills=478 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[03:00:34] basis=-3.76bps z=+0.41 fills=485 delta=$+2248 gross=$4755 gaps=0 reconn=0
+[03:00:49] basis=-2.77bps z=n/a fills=488 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[03:01:04] basis=-1.97bps z=n/a fills=488 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[03:01:19] basis=-1.83bps z=n/a fills=500 delta=$+2498 gross=$4506 gaps=0 reconn=0
+[03:01:34] basis=-2.10bps z=n/a fills=504 delta=$+2498 gross=$4506 gaps=0 reconn=0
+[03:01:49] basis=-1.78bps z=n/a fills=508 delta=$+2498 gross=$4506 gaps=0 reconn=0
+[03:02:04] basis=-2.10bps z=n/a fills=512 delta=$+2498 gross=$4506 gaps=0 reconn=0
+[03:02:19] basis=-2.27bps z=-0.54 fills=516 delta=$+2498 gross=$4506 gaps=0 reconn=0
+[03:02:34] basis=-2.19bps z=n/a fills=521 delta=$+2248 gross=$4756 gaps=0 reconn=0
+[03:02:49] basis=-2.12bps z=-0.55 fills=536 delta=$+1998 gross=$4506 gaps=0 reconn=0
+[03:03:04] basis=-2.12bps z=n/a fills=537 delta=$+2248 gross=$4756 gaps=0 reconn=0
+[03:03:19] basis=+0.10bps z=+1.24 fills=544 delta=$+2498 gross=$5006 gaps=0 reconn=0
+[03:03:34] basis=-3.07bps z=-1.29 fills=558 delta=$+2498 gross=$5005 gaps=0 reconn=0
+[03:03:49] basis=-3.64bps z=+1.33 fills=569 delta=$+2248 gross=$4755 gaps=0 reconn=0
+[03:04:04] basis=-2.05bps z=n/a fills=573 delta=$+2247 gross=$4755 gaps=0 reconn=0
+[03:04:19] basis=-1.10bps z=n/a fills=573 delta=$+2247 gross=$4755 gaps=0 reconn=0
+[03:04:34] basis=-2.09bps z=n/a fills=576 delta=$+2498 gross=$4506 gaps=0 reconn=0
+[03:04:50] basis=-2.84bps z=-0.30 fills=589 delta=$+2248 gross=$4756 gaps=0 reconn=0
+[03:05:05] basis=-4.02bps z=n/a fills=605 delta=$+2248 gross=$4755 gaps=0 reconn=0
+[03:05:20] basis=-4.49bps z=n/a fills=605 delta=$+2248 gross=$4755 gaps=0 reconn=0
+[03:05:35] basis=-2.91bps z=n/a fills=608 delta=$+2497 gross=$4505 gaps=0 reconn=0
+[03:05:50] basis=-3.38bps z=n/a fills=612 delta=$+2497 gross=$4505 gaps=0 reconn=0
+[03:06:05] basis=-2.48bps z=-0.13 fills=616 delta=$+2497 gross=$4505 gaps=0 reconn=0
+[03:06:20] basis=-3.66bps z=n/a fills=616 delta=$+2498 gross=$4505 gaps=0 reconn=0
+[03:06:35] basis=-3.95bps z=n/a fills=621 delta=$+2248 gross=$4755 gaps=0 reconn=0
+[03:06:50] basis=-4.82bps z=-0.67 fills=632 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:07:05] basis=-5.12bps z=n/a fills=640 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:07:20] basis=-6.39bps z=-0.95 fills=644 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:07:35] basis=-6.92bps z=-1.14 fills=653 delta=$+2247 gross=$4754 gaps=0 reconn=0
+[03:07:50] basis=-4.70bps z=+0.37 fills=656 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:08:05] basis=-5.02bps z=n/a fills=656 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:08:20] basis=-5.98bps z=n/a fills=662 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:08:35] basis=-6.19bps z=-1.80 fills=670 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:08:50] basis=-3.46bps z=+1.24 fills=675 delta=$+2247 gross=$4754 gaps=0 reconn=0
+[03:09:05] basis=-4.91bps z=n/a fills=675 delta=$+2247 gross=$4754 gaps=0 reconn=0
+[03:09:20] basis=-5.33bps z=n/a fills=678 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:09:35] basis=-6.23bps z=-0.73 fills=684 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:09:50] basis=-5.22bps z=n/a fills=692 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:10:05] basis=-5.42bps z=n/a fills=699 delta=$+2247 gross=$3754 gaps=0 reconn=0
+[03:10:20] basis=-5.58bps z=n/a fills=704 delta=$+2497 gross=$4004 gaps=0 reconn=0
+[03:10:35] basis=-3.74bps z=n/a fills=710 delta=$+2497 gross=$4505 gaps=0 reconn=0
+[03:10:50] basis=-5.01bps z=n/a fills=719 delta=$+2247 gross=$4754 gaps=0 reconn=0
+[03:11:05] basis=-4.92bps z=n/a fills=730 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:11:20] basis=-5.08bps z=-3.46 fills=735 delta=$+2247 gross=$4754 gaps=0 reconn=0
+[03:11:35] basis=-5.56bps z=n/a fills=742 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:11:50] basis=-4.86bps z=n/a fills=747 delta=$+2247 gross=$4754 gaps=0 reconn=0
+[03:12:05] basis=-5.18bps z=-0.09 fills=750 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:12:20] basis=-6.13bps z=n/a fills=750 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:12:35] basis=-5.49bps z=n/a fills=752 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:12:50] basis=-5.33bps z=+0.53 fills=764 delta=$+2497 gross=$4504 gaps=0 reconn=0
+[03:13:05] basis=-3.27bps z=n/a fills=765 delta=$+2247 gross=$4754 gaps=0 reconn=0
+[03:13:20] basis=-3.43bps z=n/a fills=765 delta=$+2247 gross=$4754 gaps=0 reconn=0
+
+=== 765 fills persisted immediately ===
+taker  n= 608 slip_med=+0.079bps slip_p90=+0.079bps
+maker  n= 157 slip_med=-1.500bps slip_p90=-1.500bps
+
+Raw research data: ./data/fills.jsonl, markouts.jsonl, events.jsonl, latency.jsonl, health.jsonl
+===== starting 2026-08-15T03:14:54+10:00 =====
+BASE_DIR=/home/markp/projects/linux_crypto
+CMD=/home/markp/projects/linux_crypto/.venv/bin/python -u /home/markp/projects/linux_crypto/fillquality_v2.py --minutes 480 --taker-z 0.9 --probe-secs 45 --quote-refresh 2.0 --sim-latency-ms 40 --max-gross-usd 5000 --metrics-port 9108
+[metrics] Prometheus endpoint on :9108/metrics
+[03:15:09] basis=+1.02bps z=n/a fills=6 delta=$-0 gross=$500 gaps=0 reconn=0
+[03:15:24] basis=+1.02bps z=n/a fills=6 delta=$-0 gross=$500 gaps=0 reconn=0
+[03:15:39] basis=+0.23bps z=n/a fills=11 delta=$+250 gross=$750 gaps=0 reconn=0
+[03:15:54] basis=+0.09bps z=n/a fills=22 delta=$+500 gross=$500 gaps=0 reconn=0
+[03:16:09] basis=+0.15bps z=n/a fills=30 delta=$+500 gross=$500 gaps=0 reconn=0
+[03:16:24] basis=-0.20bps z=n/a fills=36 delta=$+500 gross=$500 gaps=0 reconn=0
+[03:16:39] basis=+0.12bps z=+0.58 fills=38 delta=$+500 gross=$500 gaps=0 reconn=0
+[03:16:54] basis=+2.13bps z=n/a fills=50 delta=$+500 gross=$1000 gaps=0 reconn=0
+[03:17:09] basis=+1.78bps z=n/a fills=62 delta=$+0 gross=$0 gaps=0 reconn=0
+[03:17:24] basis=-0.47bps z=n/a fills=68 delta=$+0 gross=$1500 gaps=0 reconn=0
+[03:17:39] basis=+1.06bps z=+0.71 fills=77 delta=$+250 gross=$750 gaps=0 reconn=0
+[03:17:54] basis=+1.27bps z=n/a fills=90 delta=$-500 gross=$2000 gaps=0 reconn=0
+[03:18:09] basis=-0.95bps z=-0.75 fills=99 delta=$-250 gross=$3250 gaps=0 reconn=0
+[03:18:24] basis=+2.11bps z=n/a fills=107 delta=$-250 gross=$1250 gaps=0 reconn=0
+
+=== 114 fills persisted immediately ===
+taker  n= 106 slip_med=-0.000bps slip_p90=+0.079bps
+maker  n=   8 slip_med=-1.500bps slip_p90=-1.500bps
+
+Raw research data: ./data/fills.jsonl, markouts.jsonl, events.jsonl, latency.jsonl, health.jsonl
+===== starting 2026-08-15T03:19:36+10:00 =====
+BASE_DIR=/home/markp/projects/linux_crypto
+CMD=/home/markp/projects/linux_crypto/.venv/bin/python -u /home/markp/projects/linux_crypto/fillquality_v3.py --minutes 480 --taker-z 0.9 --probe-secs 45 --quote-refresh 2.0 --sim-latency-ms 40 --max-gross-usd 5000 --metrics-port 9108
+[metrics] Prometheus endpoint on :9108/metrics
+[03:19:52] basis=-0.78bps z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=0
+[03:20:07] basis=-2.35bps z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=0
+[03:20:22] basis=-0.45bps z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=0
+[03:20:37] basis=-0.61bps z=n/a fills=0 delta=$+0 gross=$0 gaps=0 reconn=0
+[03:20:52] basis=+0.66bps z=+1.73 fills=13 delta=$+250 gross=$2750 gaps=0 reconn=0
+[03:21:07] basis=+1.29bps z=+1.77 fills=21 delta=$+250 gross=$4750 gaps=0 reconn=0
+[03:21:22] basis=-0.77bps z=-0.20 fills=24 delta=$+500 gross=$4501 gaps=0 reconn=0
+[03:21:37] basis=-0.13bps z=+0.29 fills=24 delta=$+500 gross=$4501 gaps=0 reconn=0
+[03:21:52] basis=-3.67bps z=-2.65 fills=27 delta=$+751 gross=$3750 gaps=0 reconn=0
+[03:22:07] basis=+0.13bps z=+0.70 fills=33 delta=$+750 gross=$2249 gaps=0 reconn=0
+[03:22:22] basis=+1.01bps z=+1.18 fills=43 delta=$+750 gross=$4750 gaps=0 reconn=0

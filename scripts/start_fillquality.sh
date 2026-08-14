@@ -4,7 +4,7 @@ BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PID_FILE="$BASE_DIR/runtime/fillquality.pid"
 LOG_FILE="$BASE_DIR/logs/fillquality.log"
 PYTHON="$BASE_DIR/.venv/bin/python"
-SCRIPT="$BASE_DIR/fillquality_v2.py"
+SCRIPT="$BASE_DIR/fillquality_v3.py"
 mkdir -p "$BASE_DIR/runtime" "$BASE_DIR/logs" "$BASE_DIR/data"
 if [[ ! -x "$PYTHON" ]]; then
   echo "Missing venv Python at $PYTHON. Run ./scripts/setup_venv.sh first." >&2

@@ -1,14 +1,15 @@
 {
-  "timestamp": 1786726583.574075,
-  "spot_age_seconds": 0.1239115140051581,
-  "futures_age_seconds": 0.07536301200161688,
+  "timestamp": 1786728142.4305131,
+  "spot_age_seconds": 0.04955815900757443,
+  "futures_age_seconds": 0.01524015300674364,
   "position_open": true,
-  "net_delta_usd": 2497.59,
-  "gross_exposure_usd": 4503.97,
-  "fills": 392,
+  "net_delta_usd": 750.43,
+  "gross_exposure_usd": 4750.07,
+  "fills": 43,
   "resting_orders": 4,
   "pending_orders": 0,
   "seq_gaps": 0,
   "reconnects": 0,
-  "decode_errors": 0
+  "decode_errors": 0,
+  "crossed_books": 0
 }
